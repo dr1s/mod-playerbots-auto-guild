@@ -1,0 +1,42 @@
+[worldserver]
+
+##############################################
+# Playerbots Auto-Guild configuration
+##############################################
+
+#    PlayerbotsAutoGuild.HordeGuildId
+#        Description: Guild ID for the Horde bot guild. If set to 0,
+#                     the module will try to resolve by HordeGuildName.
+#        Default:     0
+PlayerbotsAutoGuild.HordeGuildId = 0
+
+#    PlayerbotsAutoGuild.AllianceGuildId
+#        Description: Guild ID for the Alliance bot guild. If set to 0,
+#                     the module will try to resolve by AllianceGuildName.
+#        Default:     0
+PlayerbotsAutoGuild.AllianceGuildId = 0
+
+#    PlayerbotsAutoGuild.HordeGuildName
+#        Description: Guild name for the Horde bot guild. Only used if
+#                     HordeGuildId is 0.
+#        Default:     ""
+PlayerbotsAutoGuild.HordeGuildName = ""
+
+#    PlayerbotsAutoGuild.AllianceGuildName
+#        Description: Guild name for the Alliance bot guild. Only used if
+#                     AllianceGuildId is 0.
+#        Default:     ""
+PlayerbotsAutoGuild.AllianceGuildName = ""
+
+#    PlayerbotsAutoGuild.ForceAssign
+#        Description: If true, bots will be removed from any guild they
+#                     are currently in and placed into their faction guild.
+#                     If false, bots already in a guild are left alone.
+#        Default:     false
+PlayerbotsAutoGuild.ForceAssign = false
+
+#    PlayerbotsAutoGuild.CheckIntervalSeconds
+#        Description: How often (in seconds) the periodic scan runs to
+#                     ensure all online bots are in their faction guild.
+#        Default:     60
+PlayerbotsAutoGuild.CheckIntervalSeconds = 60
